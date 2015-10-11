@@ -1,13 +1,26 @@
+/* Document wide styles */
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover {
+  color: red;
+}
+
 /* Header Styles */
 header {
   background-color: #000;
   color: white;
   width: 90%;
-  margin: 0 auto;
-  padding: 5px 0px 10px 20px;
+  margin: 20px auto;
   border-radius: 20px;
   font-size: 112%;
   font-family: Monaco, monospace;
+}
+
+.header-content {
+  padding-left: 20px;
 }
 
 #img-profile {
@@ -24,7 +37,6 @@ header {
 }
 
 #info a {
-  text-decoration: none;
   color: inherit;
 }
 
@@ -32,32 +44,90 @@ header {
   color: yellow;
 }
 
-/* Navbar Styles */
-#nav {
+/* Main styles */
+#main {
   width: 90%;
   margin: 0 auto;
-  text-align: center;
 }
 
-#nav ul {
+/* Navbar Styles */
+#nav {
   list-style: none;
   margin: 0 auto;
-  padding: 10px;
+  padding-left: 0px;
+  text-align: center;
 }
 
 #nav li {
-  display: inline;
   text-align: center;
+  margin: 5px 10px;
+}
+
+#nav li a {
+  display: block;
+  color: black;
   padding: 5px 10px;
+  margin: 0 -10px;
+  background: #E6E6E6;
+}
+
+#nav li a.active {
+  background: #8A8A8A;
+}
+
+/* Panel Styles */
+.panel {
+  margin: 0 auto;
+  text-align: left;
+  border-top: 10px solid #8a8a8a;
+  border-bottom: 10px solid #8a8a8a;
+  padding: 10px;
+  margin-top: 4px;
+  display: none;
+}
+
+.panel.active {
+  display: block;
+}
+
+.panel p {
+  line-height: 150%;
+}
+
+.date {
+  padding-right: 2em;
+}
+
+.project a {
+  color: inherit;
+}
+
+.project a:hover {
+  color: red;
 }
 
 /* Mobile re-size rules */
 @media screen and (min-width: 800px) {
+  /* Header styles */
   #img-profile {
     display: inline-block;
   }
+
   #info {
     display: inline-block;
     margin-left: 20px;
+  }
+  /* Nav Styles */
+  #nav ul {
+    padding: 10px 10px 0 10px;
+  }
+
+  #nav li {
+    display: inline;
+  }
+
+  #nav li a {
+    display: inline;
+    border-radius: 20% 20% 0 0;
   }
 }

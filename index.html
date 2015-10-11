@@ -7,25 +7,46 @@
   </head>
   <body>
     <header>
-      <h1>About Me:</h1>
-      <img src="./img/harry_profile.jpg" alt="Image Not Found" id="img-profile"/>
-      <p id="info">
-        <strong>Name:</strong> Harry Ganz </br>
-        <strong>Age:</strong> 25 </br>
-        <strong>Phone:</strong> (786) 897-7742 </br>
-        <strong>Email:</strong>
-        <a href="mailto:harry.y.ganz@gmail.com">harry.y.ganz@gmail.com</a> </br>
-        <strong>Address:</strong> 4333 Adams Avenue. Miami Beach, FL 33140
-      </p>
+      <div class="header-content">
+        <h1>About Me:</h1>
+        <img src="./img/harry_profile.jpg" alt="Image Not Found" id="img-profile"/>
+        <p id="info">
+          <strong>Name:</strong> Harry Ganz </br>
+          <strong>Age:</strong> 25 </br>
+          <strong>Phone:</strong> (786) 897-7742 </br>
+          <strong>Email:</strong>
+          <a href="mailto:harry.y.ganz@gmail.com">harry.y.ganz@gmail.com</a> </br>
+          <strong>Address:</strong> 4333 Adams Avenue. Miami Beach, FL 33140
+        </p>
+      </div>
     </header>
     <div id="main">
-      <div id="nav">
-        <ul>
-          <li><a href="#">Education</a></li>
-          <li><a href="#">Experience</a></li>
-          <li><a href="#">Interests</a></li>
-        </ul>
-      </div>
+      <ul id="nav">
+        <li><a href="#Education" class="active">Education</a></li>
+        <li><a href="#Experience">Experience</a></li>
+        <li><a href="#Interests">Interests</a></li>
+      </ul>
+        <div class="panel active" id="Education">
+          <h3>Education</h3>
+          <p>
+            <span class="date">2009-2013</span><strong>Cornell University:</strong>
+            Bachelor of Arts in Biology
+          </p>
+          <p>
+            <span class="date">2013-2014</span><strong>University of Miami:</strong>
+            Master of Professional Science in Marine Biology and Fisheries Science
+          </p>
+        </div>
+        <div class="panel" id="Experience">
+        </div>
+        <div class="panel" id="Interests">
+        </div>
     </div>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="./js/jquery-2.1.4.min.js">
+    </script>
+    <script type="text/javascript" src="./js/main.js">
+    </script>
   </body>
 </html>
