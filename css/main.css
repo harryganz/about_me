@@ -15,7 +15,7 @@ header {
   width: 90%;
   margin: 20px auto;
   border-radius: 20px;
-  font-size: 112%;
+  font-size: 110%;
   font-family: Monaco, monospace;
 }
 
@@ -33,7 +33,7 @@ header {
 #info {
   display: block;
   vertical-align: top;
-  line-height: 200%;
+  line-height: 150%;
 }
 
 #info a {
@@ -98,12 +98,8 @@ header {
   padding-right: 2em;
 }
 
-.project a {
-  color: inherit;
-}
-
-.project a:hover {
-  color: red;
+.indent {
+  padding-left: 20px;
 }
 
 /* Mobile re-size rules */
