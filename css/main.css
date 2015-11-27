@@ -9,6 +9,7 @@
   text-align: center;
   background-color: #65b1ff;
   padding: 3em;
+  margin-bottom: 0;
 }
 
 .page-header h1 {
@@ -19,4 +20,9 @@
   .page-header {
     text-align: left;
   }
+}
+
+/** Nav Styles **/
+nav {
+  margin-top: 0;
 }
